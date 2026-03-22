@@ -1,4 +1,4 @@
-import { categoria } from "./categoria";
+import type { categoria } from "./categoria";
 
 export interface Productos {
     id: number;
@@ -7,5 +7,5 @@ export interface Productos {
     price:number;
     description: string;
     category: categoria;
-    image: [];
+     images: string[];
 }

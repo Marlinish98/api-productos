@@ -18,7 +18,7 @@ const GestionProduct: React.FC = () => {
 
     return (
       <div>
-        <h1>Gestión de Productos</h1>
+        <h1 className="text-center p-3 text-4xl font-bold bg-blue-950 text-white">Gestión de Productos</h1>
        <ProductForm
   infoProductos={infoProductos}
   setInfoProductos={setInfoProductos}

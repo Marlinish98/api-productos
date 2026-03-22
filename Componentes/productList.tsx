@@ -7,13 +7,13 @@ const ProductList: React.FC<ProductListProps> = ({
   loading,
 }) => {
   return (
-    <div className="max-w-6xl mx-auto my-6">
-      <h2 className="text-2xl font-bold mb-6 text-center">Lista de Productos</h2>
+    <div className="max-w-6xl mx-auto my-6 ">
+      <h2 className="text-2xl font-bold mb-6 text-center bg-blue-800 p-3 rounded-2xl text-white">Lista de Productos</h2>
 
       {loading ? (
         <div className="text-center text-gray-500">Cargando productos...</div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 space-x-1">
           {productos.map((producto) => (
             <div
               key={producto.id}
@@ -41,7 +41,7 @@ const ProductList: React.FC<ProductListProps> = ({
                 </div>
               </div>
 
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-2">
                 <button
                   onClick={() => handleEdit(producto)}
                   className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
@@ -50,7 +50,7 @@ const ProductList: React.FC<ProductListProps> = ({
                 </button>
                 <button
                   onClick={() => handleDelete(producto.id)}
-                  className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
+                  className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition "
                 >
                   Eliminar
                 </button>

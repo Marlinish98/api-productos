@@ -1,8 +1,8 @@
-import type { InfoProductos } from "./infoProductos";
+import type { userAPI } from "./userAPI"; 
 
 export interface ProductListProps {
-    productos: InfoProductos[];
-    handleEdit: (product: InfoProductos) => void;
+    productos: userAPI[]; 
+    handleEdit: (product: userAPI) => void;
     handleDelete: (id: number) => void;
     loading: boolean;
 }
