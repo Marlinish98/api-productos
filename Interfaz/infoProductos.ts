@@ -1,8 +1,12 @@
+import type { categoria } from "./categoria";
 
 export interface InfoProductos {
-    title: string;
-    price:number;
-    description: string;
-    category: number;
-    image: [];
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: categoria;
+  images: string[];
+  createdAt?: string; 
+  updatedAt?: string;
 }
